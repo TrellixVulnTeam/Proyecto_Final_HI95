@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+section {
+    padding-top: 5rem;
+}
+.tabla-precios {
+    display:inline-block;
+    width:100%;
+    margin-top:50px;
+   }
+   
+   /*Columnas*/
+   
+.precio-col {
+    @extend .tabla-precios;
+    margin-top: 0;
+    max-width:500px;
+    border-radius:10px;
+    margin-bottom:50px;
+    box-shadow: 0px 2px 5px #dddddd;
+   }
+
+@mixin letra($color_letra, $tamano, $margen){ 
+    color: $color_letra;
+    font-size: $tamano;
+    margin-bottom: $margen;
+}
+
+$estilo1: (
+    color:#af70f7,
+    centro:center,
+    padding: 20px,
+    radio: 10px,
+);
+
+$estilo2: (
+    color:#890aff,
+    peso: 600,
+    margen: 0,
+);
+
+$estilo3: (
+    color: #2335df,
+);
+
+@media screen and (min-width:768px) {
+    .precio-col {
+    width: 31%;
+    float:left;
+    margin-right:2%;
+}
+   
+   /*Headers*/
+   
+   .precio-col-header {
+    background-color: map-get($estilo1, color);
+    padding: map-get($estilo1 , padding);
+    border-top-left-radius: map-get($estilo1 , radio);
+    border-top-right-radius: map-get($estilo1 , radio);
+    p{
+        @include letra(#000000, 18px, 0);
+        text-align: map-get($estilo1 , centro);
+
+    }
+    h3{    
+        @include letra(#000000, 30px, 0);
+        text-align: map-get($estilo1 , centro);
+        font-weight: map-get($estilo2 , peso);
+    }
+}
+.precio-col:nth-child(2) .precio-col-header {
+    background-color: map-get($estilo2 , color) }
+
+   /*Características*/
+   
+    .precio-col-features {
+        padding: 0 20px 20px 20px;
+        p {
+            padding:20px 0;
+            margin:0;
+            text-align:center;
+            border-top:1px solid #ddd;
+            &:first-child,:last-child{
+                border-top:none;
+            }
+        }
+    }
+   
+   /*Comprar*/
+   
+    .precio-col-comprar {
+        background-color: map-get($estilo3 , color);
+        padding:10px;
+        max-width:250px;
+        text-align:center;
+        margin: 0 auto 20px;
+        border-radius:10px;
+        border: 2px solid #2335df;
+        transition: all 0.3s;
+        a {
+            color:#f3f3f3;
+            padding:10px;
+            font-size:20px;
+            text-transform:uppercase;
+            transition: all 0.3s;
+           }
+        &:hover {
+            background-color:#f3f3f3;
+            transition: all 0.3s;
+            a {
+                color:map-get($estilo3 , color);
+                transition: all 0.3s
+               }
+           }
+    }
+}
