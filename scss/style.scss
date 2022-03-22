@@ -20,6 +20,7 @@ section {
    
 .precio-col {
     @extend .tabla-precios;
+    background-color: rgb(129, 129, 129);
     margin-top: 0;
     max-width:500px;
     border-radius:10px;
@@ -55,6 +56,7 @@ $estilo3: (
     width: 31%;
     float:left;
     margin-right:2%;
+    }
 }
    
    /*Headers*/
@@ -86,7 +88,7 @@ $estilo3: (
             padding:20px 0;
             margin:0;
             text-align:center;
-            border-top:1px solid #ddd;
+            border-top:1px solid #000000;
             &:first-child,:last-child{
                 border-top:none;
             }
@@ -120,4 +122,3 @@ $estilo3: (
                }
            }
     }
-}

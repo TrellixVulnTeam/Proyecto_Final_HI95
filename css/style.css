@@ -16,6 +16,7 @@ section {
 
 /*Columnas*/
 .precio-col {
+  background-color: #818181;
   margin-top: 0;
   max-width: 500px;
   border-radius: 10px;
@@ -26,55 +27,59 @@ section {
   .precio-col {
     width: 31%;
     float: left;
-    margin-right: 2%; }
-  /*Headers*/
-  .precio-col-header {
-    background-color: #af70f7;
-    padding: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; }
-    .precio-col-header p {
-      color: #000000;
-      font-size: 18px;
-      margin-bottom: 0;
-      text-align: center; }
-    .precio-col-header h3 {
-      color: #000000;
-      font-size: 30px;
-      margin-bottom: 0;
-      text-align: center;
-      font-weight: 600; }
-  .precio-col:nth-child(2) .precio-col-header {
-    background-color: #890aff; }
-  /*Características*/
-  .precio-col-features {
-    padding: 0 20px 20px 20px; }
-    .precio-col-features p {
-      padding: 20px 0;
-      margin: 0;
-      text-align: center;
-      border-top: 1px solid #ddd; }
-      .precio-col-features p:first-child, .precio-col-features p :last-child {
-        border-top: none; }
-  /*Comprar*/
-  .precio-col-comprar {
-    background-color: #2335df;
-    padding: 10px;
-    max-width: 250px;
+    margin-right: 2%; } }
+
+/*Headers*/
+.precio-col-header {
+  background-color: #af70f7;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+  .precio-col-header p {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center; }
+  .precio-col-header h3 {
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 0;
     text-align: center;
-    margin: 0 auto 20px;
-    border-radius: 10px;
-    border: 2px solid #2335df;
+    font-weight: 600; }
+
+.precio-col:nth-child(2) .precio-col-header {
+  background-color: #890aff; }
+
+/*Características*/
+.precio-col-features {
+  padding: 0 20px 20px 20px; }
+  .precio-col-features p {
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #000000; }
+    .precio-col-features p:first-child, .precio-col-features p :last-child {
+      border-top: none; }
+
+/*Comprar*/
+.precio-col-comprar {
+  background-color: #2335df;
+  padding: 10px;
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #2335df;
+  transition: all 0.3s; }
+  .precio-col-comprar a {
+    color: #f3f3f3;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
     transition: all 0.3s; }
-    .precio-col-comprar a {
-      color: #f3f3f3;
-      padding: 10px;
-      font-size: 20px;
-      text-transform: uppercase;
+  .precio-col-comprar:hover {
+    background-color: #f3f3f3;
+    transition: all 0.3s; }
+    .precio-col-comprar:hover a {
+      color: #2335df;
       transition: all 0.3s; }
-    .precio-col-comprar:hover {
-      background-color: #f3f3f3;
-      transition: all 0.3s; }
-      .precio-col-comprar:hover a {
-        color: #2335df;
-        transition: all 0.3s; } }
