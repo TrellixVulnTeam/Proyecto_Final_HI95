@@ -8,19 +8,25 @@ body {
 }
 
 section {
-    padding-top: 5rem;
+    padding-top: 7rem;
+}
+.altura{
+    padding-top: 3rem;
+}
+.altura2{
+    padding-top: 1rem;
 }
 .tabla-precios {
     display:inline-block;
     width:100%;
     margin-top:50px;
    }
-   
+
    /*Columnas*/
-   
+
 .precio-col {
     @extend .tabla-precios;
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(190, 190, 190);
     margin-top: 0;
     max-width:500px;
     border-radius:10px;
@@ -35,7 +41,7 @@ section {
 }
 
 $estilo1: (
-    color:#af70f7,
+    color:#bc82ff,
     centro:center,
     padding: 20px,
     radio: 10px,
@@ -48,7 +54,7 @@ $estilo2: (
 );
 
 $estilo3: (
-    color: #2335df,
+    color: #c7ca00,
 );
 
 @media screen and (min-width:768px) {
@@ -58,9 +64,9 @@ $estilo3: (
     margin-right:2%;
     }
 }
-   
-   /*Headers*/
-   
+
+/*Headers*/
+
    .precio-col-header {
     background-color: map-get($estilo1, color);
     padding: map-get($estilo1 , padding);
@@ -80,8 +86,8 @@ $estilo3: (
 .precio-col:nth-child(2) .precio-col-header {
     background-color: map-get($estilo2 , color) }
 
-   /*Características*/
-   
+/*Características*/
+
     .precio-col-features {
         padding: 0 20px 20px 20px;
         p {
@@ -94,9 +100,9 @@ $estilo3: (
             }
         }
     }
-   
-   /*Comprar*/
-   
+
+/*Comprar*/
+
     .precio-col-comprar {
         background-color: map-get($estilo3 , color);
         padding:10px;
@@ -104,7 +110,7 @@ $estilo3: (
         text-align:center;
         margin: 0 auto 20px;
         border-radius:10px;
-        border: 2px solid #2335df;
+        border: 2px solid map-get($estilo3,color );
         transition: all 0.3s;
         a {
             color:#f3f3f3;
@@ -116,9 +122,69 @@ $estilo3: (
         &:hover {
             background-color:#f3f3f3;
             transition: all 0.3s;
-            a {
-                color:map-get($estilo3 , color);
-                transition: all 0.3s
-               }
            }
     }
+
+footer{
+        width: 100%;
+        padding: 50px 0px;
+        background-image: url(../imagenes/footer.png);
+        background-size: cover;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    .logo img{
+        width: 100px;
+    }
+    .terms{
+        max-width: 350px;
+        margin-top: 20px;
+        font-weight: 500;
+        color: #1f1f1f;
+        font-size: 18px;
+    }
+    h2{
+        margin-bottom: 30px;
+        color: #030303;
+        font-weight: 700;
+    }
+    a{
+        margin-top: 10px;
+        color: #f3f3f3;
+        font-weight: 600;
+        &:hover{
+            opacity: 0.8;
+        }
+        .fa-brands{
+            font-size: 20px;
+        }
+    }
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0 40px;
+    p{
+        margin-top: 20px;
+        color: #1f1f1f;
+    }
+    hr{
+        border: none;
+        height: 1px;
+        background-color: #1f1f1f;
+    }
+}

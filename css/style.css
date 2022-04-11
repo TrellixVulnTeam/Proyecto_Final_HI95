@@ -7,7 +7,13 @@ body {
   background-color: lightgray; }
 
 section {
-  padding-top: 5rem; }
+  padding-top: 7rem; }
+
+.altura {
+  padding-top: 3rem; }
+
+.altura2 {
+  padding-top: 1rem; }
 
 .tabla-precios, .precio-col {
   display: inline-block;
@@ -16,7 +22,7 @@ section {
 
 /*Columnas*/
 .precio-col {
-  background-color: #818181;
+  background-color: #bebebe;
   margin-top: 0;
   max-width: 500px;
   border-radius: 10px;
@@ -31,7 +37,7 @@ section {
 
 /*Headers*/
 .precio-col-header {
-  background-color: #af70f7;
+  background-color: #bc82ff;
   padding: 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px; }
@@ -63,13 +69,13 @@ section {
 
 /*Comprar*/
 .precio-col-comprar {
-  background-color: #2335df;
+  background-color: #c7ca00;
   padding: 10px;
   max-width: 250px;
   text-align: center;
   margin: 0 auto 20px;
   border-radius: 10px;
-  border: 2px solid #2335df;
+  border: 2px solid #c7ca00;
   transition: all 0.3s; }
   .precio-col-comprar a {
     color: #f3f3f3;
@@ -80,6 +86,55 @@ section {
   .precio-col-comprar:hover {
     background-color: #f3f3f3;
     transition: all 0.3s; }
-    .precio-col-comprar:hover a {
-      color: #2335df;
-      transition: all 0.3s; }
+
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  background-image: url(../imagenes/footer.png);
+  background-size: cover; }
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px; }
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px; }
+  .box__footer .logo img {
+    width: 100px; }
+  .box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #1f1f1f;
+    font-size: 18px; }
+  .box__footer h2 {
+    margin-bottom: 30px;
+    color: #030303;
+    font-weight: 700; }
+  .box__footer a {
+    margin-top: 10px;
+    color: #f3f3f3;
+    font-weight: 600; }
+    .box__footer a:hover {
+      opacity: 0.8; }
+    .box__footer a .fa-brands {
+      font-size: 20px; }
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px; }
+  .box__copyright p {
+    margin-top: 20px;
+    color: #1f1f1f; }
+  .box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #1f1f1f; }
